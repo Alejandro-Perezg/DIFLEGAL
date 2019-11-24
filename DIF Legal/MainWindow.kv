@@ -1,0 +1,50 @@
+
+<ActionBar>:
+
+    pos_hint: {'top':1}
+    ActionView:
+        use_separator: True
+        ActionPrevious:
+            title: 'Formatos Legales'
+            with_previous: False
+        ActionOverflow:
+        ActionButton:
+            text: 'Agregar nuevo'
+            on_release: root.btnNuev()
+        ActionButton:
+            text: 'Modificar Datos'
+            on_release: root.btnMod()
+        ActionButton:
+            text: 'Ver Expedientes'
+            on_release: root.btnVer()
+<Nuevo>:
+    Label:
+        text: "Ingresar nuevo"
+        size_hint: 0.6,0.2
+        pos_hint: {"x":0.2, "top":1}
+    Button:
+        text: "Agregar"
+        size_hint: 0.8, 0.2
+        pos_hint: {"x":0.1, "y":0.1}
+<Modificar>:
+    Label:
+        text: "Modificar"
+        size_hint: 0.6,0.2
+        pos_hint: {"x":0.2, "top":1}
+
+    Button:
+        text: "Actualizar"
+        size_hint: 0.8, 0.2
+        pos_hint: {"x":0.1, "y":0.1}
+
+<Ver>:
+    Label:
+        text: "Ver"
+        size_hint: 0.6,0.2
+        pos_hint: {"x":0.2, "top":1}
+
+    Button:
+        text: "Ok"
+        size_hint: 0.8, 0.2
+        pos_hint: {"x":0.1, "y":0.1}
+
